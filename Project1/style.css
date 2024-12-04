@@ -1,0 +1,276 @@
+/* Universal resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#main {
+  width: 100%;
+  background-color: black;
+}
+
+@media (max-width: 767px) {
+  .icons {
+      display: none !important;
+  }
+}
+
+
+/* Hero Section */
+#hero {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  color: #fff;
+  position: relative; /* Ensure stacking context */
+}
+
+#nav {
+  padding: 20px 40px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#heading {
+  margin-top: 50px;
+}
+
+#heading h1 {
+  font-size: 9vw;
+  line-height: 1;
+  font-weight: 900;
+  opacity: 0.6;
+  margin-left: 30px;
+}
+
+#heading #secondh1 {
+  margin-left: 18vi;
+}
+
+.blocktext {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.sh12 {
+  text-align: right;
+  font-size: 2vi;
+}
+
+
+.shead {
+  margin-top: 100px;
+  padding-right: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.shead h5 {
+  text-align: right;
+  text-transform: uppercase;
+  font-size: 1vw;
+  margin-top: 0.5vw;
+}
+
+.hfooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  position: absolute;
+  bottom: 3%;
+  padding: 0 2vw;
+}
+
+.hfooter a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.icons {
+  display: flex;
+}
+
+.hfooter .circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #888;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Second Section (Black background with content) */
+#hsecond {
+  width: 100%;
+  height: auto; /* Allow content to grow vertically */
+  padding-top: 200px;
+  background-color: black;
+  padding-right: 100px;
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+}
+
+.elem {
+  width: 100%;
+  border: 1px solid #888;
+  padding: 3.5vw 3vw;
+  position: relative;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 3vi;
+}
+.elem:hover h5{
+  opacity: 0.5;
+  
+}.elem:hover h1{
+  opacity: 0.5;
+  
+}
+#nav a{
+  text-decoration: none;
+  color: white;
+}
+
+.elem img {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  height: 170%;
+  background-color: black;
+}
+
+.elem:hover img{
+  display: block;
+  /* position: absolute;
+  z-index: 1;
+  height: 100%;
+  background-color: black; */
+  
+
+}
+
+#about {
+  width: 100%;
+  /* padding: 10vw 5vw; */
+  background-color: black;
+  display: flex;
+  align-items: center; /* Center content horizontally */
+  /* margin-top: 50px; Give space from the previous section */
+  display: flex;
+  padding-top: 90px;
+  padding-left: 50vw;
+  gap: 50px;
+}
+
+.cynthia {
+  width: 18vw;
+  /* display: block; Ensure image is in normal flow */
+  margin-top: 0px; /* Add space above the image */
+}
+
+.viewWork {
+  /* background-color: rgb(252, 248, 248); */
+  text-decoration: none;
+  color: white;
+  margin: 5vi 1vi 2vi 2vi;
+  width: 222px;
+  border: 1px solid white;
+  border-radius: 33px;
+  height: 24px;
+  text-align: center;
+  font-size: ;
+
+}
+
+.talk {
+  text-decoration: none;
+  color: white;
+}
+
+#subscribe {
+  background-color: black;
+  padding-left: 3vi;
+}
+
+#subscribe .channel {
+  text-decoration: none;
+  color: white;
+}
+
+#subscribe .sub {
+  opacity: 0.6;
+  font-size: 15px;
+}
+
+.last {
+  background-color: black;
+  padding: 3vi;
+  display: flex;
+  justify-content: space-between;
+  gap: 29vi;
+}
+
+.lastF {
+  display: flex;
+  gap: 2vi;
+}
+.lastS {
+  text-align: right;
+}
+.social {
+  text-decoration: none;
+  color: white;
+
+  margin-left: 2vi;
+}
+
+#minicircle{
+    width: 15px;
+    height: 15px;
+    background-color: gray;
+    position: absolute;
+    z-index: 99999;
+    border-radius: 50%;
+    transition: transform 0.2s ease;
+}
+
+.bounding{
+    width: fit-content;
+    /* background-color: red; */
+    overflow: hidden;
+}
+
+.bounding h1{
+    transform: translateY(100%);
+}
+
+.bounding h5{
+    transform: translateY(100%);
+}
+
+/* .boundingelem{
+  width: 100vi;
+  height: auto;
+  font-size: 10vi;
+
+} */
+
+.belem{
+  font-size: 10vi;
+}
