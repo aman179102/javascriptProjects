@@ -1,0 +1,80 @@
+/* Set the background image and make it cover the entire body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url('https://www.pexels.com/photo/vibrant-pink-chrysanthemums-in-bloom-29479412/');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white; /* Ensure text is visible on top of the background */
+  }
+  
+  /* Style for the textarea */
+  textarea {
+    width: 80%;
+    height: 200px;
+    margin: 20px 0;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.5); /* Light border */
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white background */
+    color: #333; /* Dark text color for readability */
+    font-family: 'Arial', sans-serif;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Style for buttons */
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.5); /* Light border */
+    border-radius: 4px;
+    background-color: rgba(0, 123, 255, 0.7); /* Semi-transparent button background */
+    color: white;
+    transition: background-color 0.3s, opacity 0.3s;
+  }
+  
+  button:hover {
+    background-color: rgba(0, 123, 255, 1); /* Full opacity on hover */
+    opacity: 1;
+  }
+  
+  /* Style for the dropdown menu */
+  .font-size-dropdown {
+    position: absolute;
+    top: 35px;
+    left: 0;
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.5); /* Light border */
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent background */
+    z-index: 1000;
+    display: none;
+    color: #333; /* Dark text color for readability */
+  }
+  
+  .font-size-dropdown option {
+    background-color: rgba(255, 255, 255, 0.9); /* Light background for dropdown options */
+    color: #333;
+  }
+  
+  /* Style for the dropdown container */
+  .dropdown-container {
+    position: relative;
+  }
+  
+  /* Style for the container of buttons */
+  .btn {
+    display: flex;
+    gap: 10px;
+    z-index: 100; /* Make sure buttons appear above the background */
+  }
+  
