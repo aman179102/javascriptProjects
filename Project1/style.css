@@ -18,10 +18,9 @@ body {
 
 @media (max-width: 767px) {
   .icons {
-      display: none !important;
+    display: none !important;
   }
 }
-
 
 /* Hero Section */
 #hero {
@@ -30,6 +29,10 @@ body {
   background-color: black;
   color: #fff;
   position: relative; /* Ensure stacking context */
+}
+
+#textabout{
+  color: white;
 }
 
 #nav {
@@ -42,6 +45,7 @@ body {
 
 #heading {
   margin-top: 50px;
+  width: 100%;
 }
 
 #heading h1 {
@@ -67,7 +71,6 @@ body {
   text-align: right;
   font-size: 2vi;
 }
-
 
 .shead {
   margin-top: 100px;
@@ -121,6 +124,7 @@ body {
   background-color: black;
   padding-right: 100px;
   display: flex;
+  color: #fff;
   flex-direction: column; /* Stack elements vertically */
 }
 
@@ -135,14 +139,13 @@ body {
   justify-content: space-between;
   font-size: 3vi;
 }
-.elem:hover h5{
+.elem:hover h5 {
   opacity: 0.5;
-  
-}.elem:hover h1{
-  opacity: 0.5;
-  
 }
-#nav a{
+.elem:hover h1 {
+  opacity: 0.5;
+}
+#nav a {
   text-decoration: none;
   color: white;
 }
@@ -155,14 +158,12 @@ body {
   background-color: black;
 }
 
-.elem:hover img{
+.elem:hover img {
   display: block;
   /* position: absolute;
   z-index: 1;
   height: 100%;
   background-color: black; */
-  
-
 }
 
 #about {
@@ -174,7 +175,7 @@ body {
   /* margin-top: 50px; Give space from the previous section */
   display: flex;
   padding-top: 90px;
-  padding-left: 50vw;
+  padding-left: 30vi;
   gap: 50px;
 }
 
@@ -195,7 +196,6 @@ body {
   height: 24px;
   text-align: center;
   font-size: ;
-
 }
 
 .talk {
@@ -206,11 +206,26 @@ body {
 #subscribe {
   background-color: black;
   padding-left: 3vi;
+  padding-top: 18vi; /*fixes*/
+}
+
+@media (max-width:767px){
+  #subscribe{
+    display: inline;
+  }
+
+
 }
 
 #subscribe .channel {
   text-decoration: none;
   color: white;
+}
+
+
+#subscribe{
+  width: fit-content;
+  height: fit-content;
 }
 
 #subscribe .sub {
@@ -224,6 +239,7 @@ body {
   display: flex;
   justify-content: space-between;
   gap: 29vi;
+  padding-top: 10vi; /*fixes*/
 }
 
 .lastF {
@@ -240,28 +256,86 @@ body {
   margin-left: 2vi;
 }
 
-#minicircle{
-    width: 15px;
-    height: 15px;
-    background-color: gray;
-    position: absolute;
-    z-index: 99999;
-    border-radius: 50%;
-    transition: transform 0.2s ease;
+#minicircle {
+  width: 15px;
+  height: 15px;
+  background-color: gray;
+  position: absolute;
+  z-index: 99999;
+  border-radius: 50%;
+  transition: transform 0.2s ease;
+  display: none;
 }
 
-.bounding{
-    width: fit-content;
-    /* background-color: red; */
-    overflow: hidden;
+
+
+/* //fixes */
+body:hover #minicircle {
+  display: block;
+  width: 15px;
+  height: 15px;
+  background-color: gray;
+  position: absolute;
+  z-index: 99999;
+  border-radius: 50%;
+  transition: transform 0.2s ease;
+} /*fixes*/
+@media (max-width: 639px) {
+  #about {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1vi;
+    font-size: 5vi;
+  }
+  .cynthia {
+    width: 80vi;
+  }
+  #subscribe {
+    font-size: 4vi;
+  }
+  .belem {
+    font-size: 80vi;
+  }
+  .bounding h1 {
+    font-size: 15vw !important;
+  }
+  .sh12 {
+    font-size: 4vi;
+  }
+  .sh13 {
+    font-size: 4vi !important;
+    margin-top: 0vi !important;
+    margin-left: 0px !important;
+  }
+  .sh14 {
+    font-size: 4vi !important;
+  }
+  #nav {
+    font-size: 5.2vi;
+  }
+  .hfooter{
+    font-size: 4vi;
+  }
+  .elem{
+    font-size: 4vi;
+  }
+  .hfooter{
+    margin-top: 10px;
+  }
 }
 
-.bounding h1{
-    transform: translateY(100%);
+.bounding {
+  width: fit-content;
+  /* background-color: red; */
+  overflow: hidden;
 }
 
-.bounding h5{
-    transform: translateY(100%);
+.bounding h1 {
+  transform: translateY(100%);
+}
+
+.bounding h5 {
+  transform: translateY(100%);
 }
 
 /* .boundingelem{
@@ -271,6 +345,6 @@ body {
 
 } */
 
-.belem{
+.belem {
   font-size: 10vi;
 }
