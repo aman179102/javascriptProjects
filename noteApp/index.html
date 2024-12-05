@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NoteTakingApp</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <textarea name="nonsense" id="text"></textarea>
+    <div class="btn">
+      <button class="clear">clear</button>
+      <button class="download">Download as .txt</button>
+      <button class="toggle-size">Toggle Text Size</button>
+    </div>
+
+    <!-- Dropdown Menu for Font Size -->
+    <div class="dropdown-container">
+      <select id="font-size-dropdown" class="font-size-dropdown"
+        style="display:none;">
+        <!-- Font sizes will be dynamically populated here -->
+      </select>
+    </div>
+
+  </body>
+</html>
